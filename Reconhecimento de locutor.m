@@ -1,5 +1,6 @@
-%%%%%%%%%% Identificador de Locutor André Heidemann Iarozinski
-%%%%%%%%%%
+%% Identificador de Locutor 
+%% Autor:AndrÃ© Heidemann Iarozinski
+%% Data:25/11/2015
 
 prompt = 'bem vindo, aperte "enter" para fazer login ';
 input(prompt);
@@ -14,7 +15,7 @@ values=0:1/fs:duration;
 a=amp*sin(2*pi* freq*values);
 sound(a,11025)
 
-%%%%%%%%%% armazenando amostras para verificação
+%%%%%%%%%% armazenando amostras para verificaÃ§Ã£o
 
 for i=1:3
 
@@ -48,17 +49,17 @@ cf=(c1+c2+c3)/3;
 
 c=ceil(cf);                 %%%ENTRADA NA REDE 
 
-%%%%%%%%% criação da matriz data
-d = [a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 u1 u2 u3 u4 u5 u6 u7 u8 u9 u10];  %% b´s bruno,kaio,jake
+%%%%%%%%% criaÃ§Ã£o da matriz data
+d = [a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12 a13 a14 a15 a16 a17 a18 a19 a20 a21 a22 a23 a24 a25 a26 a27 a28 a29 a30 b1 b2 b3 b4 b5 b6 b7 b8 b9 b10 u1 u2 u3 u4 u5 u6 u7 u8 u9 u10];  %% bÂ´s bruno,kaio,jake
 
-%%%%%%% criação da matriz resposta
+%%%%%%% criaÃ§Ã£o da matriz resposta
 r = [zeros(1,30) ones(1,20)];
 
 d=d';
 r=r';
 %%%%criacao da rede neural "redezz"(10 neuronios) com as amostras
 
-%%%%%%%%% verificação final
+%%%%%%%%% verificaÃ§Ã£o final
 f= rede_x4(c);
 
 if f<=0.4
