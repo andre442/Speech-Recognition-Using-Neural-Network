@@ -60,7 +60,7 @@ r=r';
 %%%%criacao da rede neural "redezz"(10 neuronios) com as amostras
 
 %%%%%%%%% verificação final
-f= rede_x4(c);
+f= rede_x2(c);
 
 if f<=0.4
 
