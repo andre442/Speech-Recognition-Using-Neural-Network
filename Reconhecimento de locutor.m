@@ -57,7 +57,7 @@ r = [zeros(1,30) ones(1,20)];
 
 d=d';
 r=r';
-%%%%criacao da rede neural "redezz"(10 neuronios) com as amostras
+
 
 %%%%%%%%% verificação final
 f= rede_x2(c);
